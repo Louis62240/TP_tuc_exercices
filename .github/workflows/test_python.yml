@@ -24,12 +24,7 @@ jobs:
       - name : pylint
         run : |
          pylint
-      - name: create-json
-        id: create-json
-        uses: jsdaniell/create-json@v1.2.1
-        with:
-          name: "credentials.json"
-          json: ${{ secrets.MY_JSON }}
+
 
 
        
